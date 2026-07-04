@@ -1,10 +1,14 @@
 /* ------------------------------
           IMPORT TYPO
  ---------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
+a{
+    text-decoration: none;
+    font-family: "Zalando Sans", sans-serif;
+    
+}
 
 /* ------------------------------
             MINIMAL CSS
@@ -15,6 +19,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/* ------------------------------
+            couleur
+ ---------------------------------*/
+
+ .blanc{
+    color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------
+            BOUTON
+ ---------------------------------*/
+
+
+
 
 /* ------------------------------
             CONTAINER
@@ -34,9 +67,164 @@
             BACKGROUND
 ---------------------------------*/
 .background-hero {
-    background-image: url(asset/Background\ Hero.png);
+    background-image: url(asset/Background_Hero.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
+}
+
+.background-header{
+   background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 10vh;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------------
+         MARGIN & PADDING 
+ ---------------------------------*/
+
+/* Margin */
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mt-128 {
+    margin-top: 128px;
+}
+
+.mb-128 {
+    margin-bottom: 128px;
+}
+
+/* padding */
+
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pb-32 {
+    padding-bottom: 16px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-64 {
+    padding-bottom: 64px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+
+.pb-128 {
+    padding-bottom: 128px;
+}
+
+
+/* ------------------------------
+            Taille
+ ---------------------------------*/
+
+.w-100 {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-23 {
+    width: 23%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-18 {
+    width: 18%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-10{
+    width: 10%;
+}
+.w-5 {
+    width: 5%;
 }
