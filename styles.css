@@ -23,17 +23,44 @@
  ---------------------------------*/
 
 
-a{
+a {
     text-decoration: none;
     font-family: "Zalando Sans", sans-serif;
-    
+
 }
 
 
 
-h3{
-    font-family:  "Zalando Sans Expanded", sans-serif;
-    font-size: 32px;
+h1 {
+    color: #2C170B;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 128px;
+    font-weight: 900;
+}
+
+
+.h2-hiro {
+   
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+
+}
+
+
+
+
+h3 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 24px;
+}
+
+
+.h3-hiro {
+    color: #2C170B;
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
 }
 
 /* ------------------------------
@@ -65,18 +92,26 @@ h3{
             couleur
  ---------------------------------*/
 
- .blanc{
+.blanc {
     color: white;
- }
+}
 
- .orange{
+.orange {
     color: #E33127;
- }
+}
 
- .beige{
+.beige {
     color: #FFF6E8;
- }
+}
 
+.marron {
+    color: #2C170B;
+}
+
+.or {
+    color: #FCB328;
+
+}
 
 
 
@@ -94,11 +129,11 @@ h3{
             BOUTON
  ---------------------------------*/
 
-.btn-contactez-moi{
-    color: white;
+.btn-contactez-moi {
+    color: #2C170B;
     background-color: transparent;
     border: solid;
-    border-color: white;
+    border-color: #2C170B;
     border-width: 1px;
     border-radius: 100px;
     padding: 8px 16px;
@@ -106,9 +141,9 @@ h3{
 
 /* BOUTON:HOVER */
 
-.btn-contactez-moi:hover{
-    color: #E33127;
-    background-color: white;
+.btn-contactez-moi:hover {
+    color: #FFF6E8;
+    background-color: #2C170B;
     border-radius: 100px;
     padding: 8px 16px;
 }
@@ -127,18 +162,26 @@ h3{
 }
 
 
-.background-orange{
+.background-orange {
     background-color: #E33127;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-.background-beige{
+.background-beige {
     background-color: #FFF6E8;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.background-or {
+    background-color: #FCB328;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 /* ------------------------------
             FLEXBOX
@@ -201,7 +244,7 @@ h3{
     gap: 16px;
 }
 
-.gap-20{
+.gap-20 {
     gap: 20px;
 }
 
@@ -213,7 +256,7 @@ h3{
     gap: 64px;
 }
 
-.gap-128{
+.gap-128 {
     gap: 128px;
 }
 
@@ -258,13 +301,24 @@ h3{
 /* padding */
 
 
-.pt-8{
+.pt-8 {
     padding-top: 8px;
 }
 
-.pb-8{
+.pb-8 {
     padding-bottom: 8px;
+
 }
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
 
 .pb-16 {
     padding-bottom: 16px;
@@ -305,13 +359,14 @@ h3{
 
 
 /* ------------------------------
-           Positioh
+           Position
  ---------------------------------*/
 
 .header {
     position: sticky;
-    top: 0;
+    top: 0;  
 }
+
 
 
 
@@ -381,9 +436,10 @@ h3{
     width: 15%;
 }
 
-.w-10{
+.w-10 {
     width: 10%;
 }
+
 .w-5 {
     width: 5%;
 }
