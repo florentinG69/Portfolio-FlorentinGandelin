@@ -40,7 +40,7 @@ h1 {
 
 
 .h2-hiro {
-   
+
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -48,6 +48,10 @@ h1 {
 
 }
 
+h2 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 48px;
+}
 
 
 
@@ -62,6 +66,23 @@ h3 {
     font-family: "Zalando Sans", sans-serif;
     font-weight: 400;
 }
+
+
+.h3-bvn {
+    color: #2C170B;
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
 
 /* ------------------------------
             CONTAINER
@@ -129,6 +150,16 @@ h3 {
             BOUTON
  ---------------------------------*/
 
+.btn-nav {
+    color: #2C170B;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
 .btn-contactez-moi {
     color: #2C170B;
     background-color: transparent;
@@ -179,8 +210,15 @@ h3 {
     background-color: #FCB328;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 250px 0 0 0;
 }
 
+.carte-beige {
+    background-color: #FFF6E8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 500px;
+}
 
 
 /* ------------------------------
@@ -364,7 +402,7 @@ h3 {
 
 .header {
     position: sticky;
-    top: 0;  
+    top: 0;
 }
 
 
