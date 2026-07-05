@@ -1,0 +1,385 @@
+/* ------------------------------
+           IMPORT TYPO
+---------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/* ------------------------------
+             Minimal CSS
+---------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------
+           TYPO
+---------------------------------*/
+
+/* DM Sans */
+
+.dm-sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* DM Sans Display */
+
+.dm-serif-display {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* zalando sans expanded */
+
+.zalando-sans-expanded {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Instrument-Serif */
+.instrument-serif {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ------------------------------
+            TEXTE 
+---------------------------------*/
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+/* ------------------------------
+           Palette de couleur 
+---------------------------------*/
+
+.noir {
+    color: #2A2425;
+}
+
+.beige {
+    color: #FFF4DF;
+}
+
+
+/* ------------------------------
+           h1, h2, h3, p, a
+---------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #2A2425;
+}
+
+.p-header {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #2A2425;
+
+}
+
+.h2-hiro {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #2A2425;
+}
+
+h2{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 46px;
+
+}
+
+
+
+/* ------------------------------
+            CONTAINER
+---------------------------------*/
+
+.container-1400 {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ------------------------------
+           Background 
+---------------------------------*/
+.background-hero {
+    background-image: url(asset/background_hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+
+.background-beige {
+    background-color: #FFF4DF;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------
+           Bouton
+---------------------------------*/
+
+.btn-nav {
+    color: #2A2425;
+    font-family: "DM Serif", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.btn-contact {
+
+    color: #2A2425;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.btn-contact-2 {
+
+    color: #2A2425;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px 20px;
+
+}
+
+.btn-real {
+    color: #FFF4DF;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #2A2425;
+    background-color: #2A2425;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 8px 16px;
+
+}
+
+/* ------------------------------
+         hover
+ ---------------------------------*/
+
+
+
+
+
+/* ------------------------------
+         MARGIN & PADDING 
+ ---------------------------------*/
+
+/* Margin */
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mt-128 {
+    margin-top: 128px;
+}
+
+.mb-128 {
+    margin-bottom: 128px;
+}
+
+/* padding */
+
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pb-32 {
+    padding-bottom: 16px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-64 {
+    padding-bottom: 64px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+
+.pb-128 {
+    padding-bottom: 128px;
+}
+
+.pt-256 {
+    padding-top: 256px;
+}
+
+.pb-256 {
+    padding-bottom: 256px;
+}
+
+
+
+
+
+
+/* ------------------------------
+            FLEXBOX
+ ---------------------------------*/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-64 {
+    gap: 64px;
+}
+
+.gap-128 {
+    gap: 128px;
+}
+
+
+/* ------------------------------
+            Position
+ ---------------------------------*/
+
+.header-pos{
+    position: sticky;
+    top: 0;
+}
+
+
+
+/* ------------------------------
+            h2 Animation
+ ---------------------------------*/
+
+
