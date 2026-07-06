@@ -4,8 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 /* ------------------------------
              Minimal CSS
@@ -29,22 +28,14 @@
     font-style: normal;
 }
 
-/* DM Sans Display */
+/* Gloock */
 
-.dm-serif-display {
-    font-family: "DM Serif Display", serif;
+.gloock-regular {
+    font-family: "Gloock", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-/* zalando sans expanded */
-
-.zalando-sans-expanded {
-    font-family: "Zalando Sans Expanded", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* Instrument-Serif */
 .instrument-serif {
@@ -62,7 +53,9 @@
     text-align: center;
 }
 
-
+.font-64{
+    font-size: 64px;
+}
 
 
 
@@ -76,6 +69,10 @@
 
 .beige {
     color: #FFF4DF;
+}
+
+.bleu{
+    color: #5471A1;
 }
 
 
@@ -97,7 +94,7 @@ h1 {
 }
 
 .p-header {
-    font-family: "DM Serif Display", serif;
+    font-family: "Gloock", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
@@ -113,23 +110,50 @@ h1 {
     color: #2A2425;
 }
 
-h2{
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+h2 {
+    font-family: "Gloock", serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 46px;
+    color: #2A2425;
 
 }
 
+h3{
+    font-family: "Gloock", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFF4DF;
+    
+}
+
+p {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #2A2425;
+
+}
+
+
+.p-carte{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #5471A1;
+    
+}
 
 
 /* ------------------------------
             CONTAINER
 ---------------------------------*/
 
-.container-1400 {
-    max-width: 1400px;
+.container-1200 {
+    max-width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -156,6 +180,23 @@ h2{
 }
 
 /* ------------------------------
+           Carte
+---------------------------------*/
+
+.carte-beige{
+    background-color: #2A2425;
+    padding: 20px;
+    box-shadow: 0px 3px 0px #6b656679;
+    border-radius: 0 0 50px 50px;
+}
+
+
+
+
+
+
+
+/* ------------------------------
            Bouton
 ---------------------------------*/
 
@@ -165,21 +206,11 @@ h2{
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
+    transition: all 0.5s ease-out;
+    
 }
 
 .btn-contact {
-
-    color: #2A2425;
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    padding: 8px 16px;
-}
-
-.btn-contact-2 {
-
     color: #2A2425;
     border: solid;
     border-width: 1px;
@@ -190,23 +221,25 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    transition: all 0.5s ease-out;
 
 }
 
 .btn-real {
-    color: #FFF4DF;
+    color: #5471A1;
     border: solid;
     border-width: 1px;
     border-radius: 20px;
-    border-color: #2A2425;
-    background-color: #2A2425;
+    border-color: #5471A1;
+    background-color: #FFF4DF;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 5px 20px;
+    transition: all 0.5s ease-out;
 
 }
 
@@ -214,8 +247,24 @@ h2{
          hover
  ---------------------------------*/
 
+.btn-contact:hover,
+.btn-contact:focus{
+    background-color: #2A2425;
+    border-color: #2A2425;
+    color: #FFF4DF;
+}
 
+.btn-real:hover,
+.btn-real:focus{
+    background-color: #5471A1;
+    border-color: #5471A1;
+    color: #FFF4DF;
+}
 
+.btn-nav:hover,
+.btn-nav:focus{
+    color: #5471A1;
+}
 
 
 /* ------------------------------
@@ -258,6 +307,22 @@ h2{
 
 /* padding */
 
+.pr-32{
+    padding-right: 32px;
+}
+
+.pl-32{
+    padding-left: 32px;
+}
+
+
+.pt-8{
+    padding-top: 8px;
+}
+
+.pb-8{
+    padding-bottom: 8px;
+}
 
 .pb-16 {
     padding-bottom: 16px;
@@ -337,6 +402,8 @@ h2{
     align-items: flex-end;
 }
 
+
+
 .justify-center {
     justify-content: center;
 }
@@ -371,15 +438,91 @@ h2{
             Position
  ---------------------------------*/
 
-.header-pos{
+.header-pos {
     position: sticky;
     top: 0;
 }
 
+.txt-pos{
+    position: relative;
+    top: 200px; 
+}
 
 
-/* ------------------------------
-            h2 Animation
+
+
+
+
+ /* ------------------------------
+            TAILLE
  ---------------------------------*/
 
+.w-100 {
+    width: 100%;
+}
 
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-23 {
+    width: 23%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-18 {
+    width: 18%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+ /* ------------------------------
+            IMG BORDER
+ ---------------------------------*/
+
+ .img-border{
+    border-radius: 50px 50px 0 0;
+    display: block;
+ }
