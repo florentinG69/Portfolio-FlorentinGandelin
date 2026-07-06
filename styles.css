@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-.font-64{
+.font-64 {
     font-size: 64px;
 }
 
@@ -71,7 +71,7 @@
     color: #FFF4DF;
 }
 
-.bleu{
+.bleu {
     color: #5471A1;
 }
 
@@ -119,12 +119,12 @@ h2 {
 
 }
 
-h3{
+h3 {
     font-family: "Gloock", serif;
     font-weight: 700;
     font-style: normal;
     color: #FFF4DF;
-    
+
 }
 
 p {
@@ -137,14 +137,14 @@ p {
 }
 
 
-.p-carte{
+.p-carte {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 16px;
     color: #5471A1;
-    
+
 }
 
 
@@ -183,9 +183,9 @@ p {
            Carte
 ---------------------------------*/
 
-.carte-beige{
+.carte-beige {
     background-color: #2A2425;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0px 3px 0px #6b656679;
     border-radius: 0 0 50px 50px;
 }
@@ -207,7 +207,7 @@ p {
     font-style: normal;
     font-size: 16px;
     transition: all 0.5s ease-out;
-    
+
 }
 
 .btn-contact {
@@ -243,29 +243,54 @@ p {
 
 }
 
+
+.btn-esp {
+    color: #FFF4DF;
+    background-color: #5471A1;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 5px 20px;
+    font-size: 16px;
+    padding: 5px 20px;
+    transition: all 0.5s ease-out;
+    border-radius: 20px;
+}
+
+
 /* ------------------------------
          hover
  ---------------------------------*/
 
 .btn-contact:hover,
-.btn-contact:focus{
+.btn-contact:focus {
     background-color: #2A2425;
     border-color: #2A2425;
     color: #FFF4DF;
 }
 
 .btn-real:hover,
-.btn-real:focus{
+.btn-real:focus {
     background-color: #5471A1;
     border-color: #5471A1;
     color: #FFF4DF;
 }
 
 .btn-nav:hover,
-.btn-nav:focus{
+.btn-nav:focus {
     color: #5471A1;
 }
 
+.btn-esp:hover,
+.btn-nav:focus {
+    background-color: #2A2425;
+    border: solid;
+    border-width: 1px;
+    border-color: #5471A1;
+    color: #5471A1;
+}
 
 /* ------------------------------
          MARGIN & PADDING 
@@ -307,20 +332,20 @@ p {
 
 /* padding */
 
-.pr-32{
+.pr-32 {
     padding-right: 32px;
 }
 
-.pl-32{
+.pl-32 {
     padding-left: 32px;
 }
 
 
-.pt-8{
+.pt-8 {
     padding-top: 8px;
 }
 
-.pb-8{
+.pb-8 {
     padding-bottom: 8px;
 }
 
@@ -443,9 +468,9 @@ p {
     top: 0;
 }
 
-.txt-pos{
+.txt-pos {
     position: relative;
-    top: 200px; 
+    top: 200px;
 }
 
 
@@ -453,7 +478,7 @@ p {
 
 
 
- /* ------------------------------
+/* ------------------------------
             TAILLE
  ---------------------------------*/
 
@@ -518,11 +543,11 @@ p {
     width: 5%;
 }
 
- /* ------------------------------
+/* ------------------------------
             IMG BORDER
  ---------------------------------*/
 
- .img-border{
+.img-border {
     border-radius: 50px 50px 0 0;
     display: block;
- }
+}
