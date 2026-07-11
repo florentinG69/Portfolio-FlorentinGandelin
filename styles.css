@@ -3,7 +3,7 @@
 ---------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 /* ------------------------------
@@ -37,12 +37,14 @@
 }
 
 
-/* Instrument-Serif */
-.instrument-serif {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+/* Zalando */
+.zalando-sans-expanded{
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 
 /* ------------------------------
@@ -85,12 +87,41 @@ a {
 }
 
 h1 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Zalando Sans Expanded", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    color: #2A2425;
+}
+
+
+h2 {
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 64px;
+    font-size: 32px;
     color: #2A2425;
+
+}
+
+
+h3 {
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #2A2425;
+
+}
+
+p {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #2A2425;
+
 }
 
 .p-header {
@@ -99,51 +130,6 @@ h1 {
     font-style: normal;
     font-size: 32px;
     color: #2A2425;
-
-}
-
-.h2-hiro {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    color: #2A2425;
-}
-
-h2 {
-    font-family: "Gloock", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 46px;
-    color: #2A2425;
-
-}
-
-h3 {
-    font-family: "Gloock", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #FFF4DF;
-
-}
-
-p {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    color: #2A2425;
-
-}
-
-
-.p-carte {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    color: #5471A1;
 
 }
 
@@ -162,7 +148,7 @@ p {
 }
 
 
-.container-1600 {
+.container-1400 {
     max-width: 1400px;
     width: 100%;
     margin-left: auto;
@@ -194,11 +180,13 @@ p {
 ---------------------------------*/
 
 .carte-projet {
-    background-color: #2A2425;
+    background-color: #ffffff;
     padding: 40px;
-    box-shadow: 0px 3px 0px #6b656679;
-    border-radius: 0 0 50px 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.185);
+    border-radius: 50px;
+    width: 40%;
 }
+
 
 
 
@@ -237,11 +225,11 @@ p {
 }
 
 .btn-real {
-    color: #5471A1;
+    color: #CF5354;
     border: solid;
     border-width: 1px;
     border-radius: 20px;
-    border-color: #5471A1;
+    border-color: #CF5354;
     background-color: #FFF4DF;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -276,15 +264,15 @@ p {
 
 .btn-contact:hover,
 .btn-contact:focus {
-    background-color: #2A2425;
-    border-color: #2A2425;
+    background-color: #5471A1;
+    border-color: #5471A1;
     color: #FFF4DF;
 }
 
 .btn-real:hover,
 .btn-real:focus {
-    background-color: #5471A1;
-    border-color: #5471A1;
+    background-color: #CF5354;
+    border-color: #CF5354;
     color: #FFF4DF;
 }
 
@@ -479,7 +467,7 @@ p {
 }
 
 .txt-pos {
-    position: relative;
+
     top: 200px;
 }
 
@@ -553,16 +541,85 @@ p {
     width: 5%;
 }
 
-/* ------------------------------
-            IMG BORDER
- ---------------------------------*/
 
-.img-border {
-    border-radius: 50px;
+
+
+
+
+/* ------------------------------
+           header apre scroll
+ ---------------------------------*/
+.header-scroll{
+    color: #B2C9DF;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transition: 0.2s ease;
+}
+
+
+/* ------------------------------
+            carrousel
+ ---------------------------------*/
+.carte-liste .carte-item .carte-link {
+    width: 500px;
     display: block;
-    width: 50%;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.185);
+    background: #fff;
+    padding: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.185);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+
+}
+
+.carte-liste .carte-item .carte-link:hover {
+    border-color: #5471A1;
 }
 
 
 
+.carte-liste .carte-link .carte-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carte-liste .carte-item {
+    list-style: none;
+}
+
+.carte-liste .carte-link .tag {
+    color: #5471A1;
+    padding: 5px 10px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 6px;
+    background: #B2C9DF;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.carte-liste .carte-link .carte-titre {
+    color: #2A2425;
+}
+
+.carte-liste .carte-link .carte-bouton {
+    height: 35px;
+    width: 35px;
+    color: #5471A1;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 2px solid #5471A1;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.carte-liste .carte-link:hover .carte-bouton {
+    color: #fff;
+    background: #5471A1;
+
+}
