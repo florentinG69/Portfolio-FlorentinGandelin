@@ -3,7 +3,7 @@
 ---------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 /* ------------------------------
@@ -37,15 +37,11 @@
 }
 
 
-/* Zalando */
-.zalando-sans-expanded {
-    font-family: "Zalando Sans Expanded", sans-serif;
-    font-optical-sizing: auto;
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
 }
-
-
 
 /* ------------------------------
             TEXTE 
@@ -87,17 +83,17 @@ a {
 }
 
 h1 {
-    font-family: "Zalando Sans Expanded", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 44px;
-    color: #2A2425;
+    font-size: 64px;
+    color: #0027A9;
 }
 
 
 h2 {
-    font-family: "Zalando Sans Expanded", sans-serif;
+    font-family: "Gloock", serif;
     font-weight: 900;
     font-style: normal;
     font-size: 32px;
@@ -116,7 +112,7 @@ h3 {
 }
 
 p {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Instrument Serif", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -134,12 +130,21 @@ p {
 
 }
 
-.h2-hero{
-    font-family: "DM Sans", sans-serif;
+.h2-hero {
+    font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
-    color: #2A2425;
+    color: #0027A9;
+}
+
+.florentin {
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #0027A9;
+
 }
 
 /* ------------------------------
@@ -177,8 +182,8 @@ p {
 
 }
 
-.background-beige {
-    background-color: #FFF4DF;
+.background-blanc {
+    background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -190,8 +195,8 @@ p {
 }
 
 
-.carte-beige{
-    background-color:#FFF4DF;
+.carte-beige {
+    background-color: #FFF4DF;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -211,11 +216,11 @@ p {
 }
 
 .btn-contact {
-    color: #2A2425;
+    color: white;
     border: solid;
     border-width: 1px;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: #0027A9;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -227,12 +232,12 @@ p {
 }
 
 .btn-real {
-    color: #CF5354;
+    color: #000000;
     border: solid;
     border-width: 1px;
     border-radius: 20px;
-    border-color: #CF5354;
-    background-color: #FFF4DF;
+    border-color: #000000;
+    background-color: #ffffff;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -243,21 +248,6 @@ p {
 
 }
 
-
-.btn-esp {
-    color: #FFF4DF;
-    background-color: #5471A1;
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    padding: 5px 20px;
-    font-size: 16px;
-    padding: 5px 20px;
-    transition: all 0.5s ease-out;
-    border-radius: 20px;
-}
 
 
 /* ------------------------------
@@ -266,15 +256,15 @@ p {
 
 .btn-contact:hover,
 .btn-contact:focus {
-    background-color: #5471A1;
-    border-color: #5471A1;
-    color: #FFF4DF;
+    background-color: #ffffff;
+    border-color: #0027A9;
+    color: #0027A9;
 }
 
 .btn-real:hover,
 .btn-real:focus {
-    background-color: #CF5354;
-    border-color: #CF5354;
+    background-color: #000000;
+    border-color: #000000;
     color: #FFF4DF;
 }
 
@@ -331,7 +321,7 @@ p {
 }
 
 /* Carousel styles */
-.carousel{
+.carousel {
     position: relative;
     max-width: 1120px;
     margin: 0 auto;
@@ -343,29 +333,36 @@ p {
     transform: translateY(40px);
     transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.carousel.is-visible{
+
+.carousel.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
-.carousel.is-visible .slide{
+
+.carousel.is-visible .slide {
     animation: carouselSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
 .carousel.is-visible .slide:nth-child(2n) {
     animation-delay: 0.1s;
 }
+
 .carousel.is-visible .slide:nth-child(3n) {
     animation-delay: 0.2s;
 }
+
 .carousel.is-visible .carousel-button,
 .carousel.is-visible .carousel-dots {
     opacity: 1;
     transform: translateY(0);
 }
-.carousel-track-wrap{
+
+.carousel-track-wrap {
     overflow: hidden;
     padding-bottom: 16px;
 }
-.carousel-track{
+
+.carousel-track {
     display: flex;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     list-style: none;
@@ -375,7 +372,8 @@ p {
     gap: 24px;
     scroll-snap-type: x mandatory;
 }
-.slide{
+
+.slide {
     flex: 0 0 calc(50% - 12px);
     max-width: calc(50% - 12px);
     display: flex;
@@ -383,21 +381,25 @@ p {
     align-items: stretch;
     scroll-snap-align: start;
 }
-.slide.active .carte-item{
+
+.slide.active .carte-item {
     transform: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
 }
+
 .slide img,
-.carte-image{
+.carte-image {
     width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 24px 24px 0 0;
     display: block;
 }
+
 .carousel-track li.slide {
     min-height: 100%;
 }
+
 .carte-item {
     width: 100%;
     display: flex;
@@ -408,19 +410,23 @@ p {
     border: 2px solid transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
 }
+
 .carte-item:hover {
     border-color: #2A2425;
 }
+
 .carte-image-link {
     display: block;
     width: 100%;
 }
+
 .card-info {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px;
 }
+
 .type {
     display: inline-flex;
     align-items: center;
@@ -434,24 +440,28 @@ p {
     letter-spacing: 0.01em;
     width: fit-content;
 }
+
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 16px;
 }
+
 .carte-titre {
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.2;
     color: #1c1f34;
 }
+
 .duree {
     margin: 0;
     color: #CF5354;
     font-size: 0.95rem;
     font-weight: 600;
 }
+
 .tag {
     margin: 0;
     color: #4a5a8e;
@@ -459,6 +469,7 @@ p {
     font-weight: 500;
     line-height: 1.5;
 }
+
 .carte-bouton {
     color: #2A2425;
     border-color: #2A2425;
@@ -475,13 +486,15 @@ p {
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
+
 .carte-bouton:hover,
 .carte-item:hover .carte-bouton,
 .carte-item:focus-within .carte-bouton {
     color: #FFF;
     background: #2A2425;
 }
-.carousel-button{
+
+.carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -496,18 +509,39 @@ p {
     cursor: pointer;
     font-size: 24px;
     border-radius: 9999px;
-    box-shadow: 0 12px 24px rgba(35,59,111,0.08);
+    box-shadow: 0 12px 24px rgba(35, 59, 111, 0.08);
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, opacity 0.5s ease;
     z-index: 5;
     opacity: 0;
     transform: translateY(-50%) translateY(12px);
 }
-.carousel-button:hover{ transform: translateY(-50%) scale(1.05); background: #FFF4DF; }
-.carousel-button.prev:hover{ background: #CF5354; color: #FFF4DF; border-color: #CF5354; }
-.carousel-button.next:hover{ background: #5471A1; color: #FFF4DF; border-color: #5471A1; }
-.carousel-button.prev{ left: -48px; }
-.carousel-button.next{ right: -48px; }
-.carousel-dots{
+
+.carousel-button:hover {
+    transform: translateY(-50%) scale(1.05);
+    background: #FFF4DF;
+}
+
+.carousel-button.prev:hover {
+    background: #CF5354;
+    color: #FFF4DF;
+    border-color: #CF5354;
+}
+
+.carousel-button.next:hover {
+    background: #5471A1;
+    color: #FFF4DF;
+    border-color: #5471A1;
+}
+
+.carousel-button.prev {
+    left: -48px;
+}
+
+.carousel-button.next {
+    right: -48px;
+}
+
+.carousel-dots {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -516,7 +550,8 @@ p {
     transform: translateY(12px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.dot{
+
+.dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -524,12 +559,19 @@ p {
     border: 2px solid #2A2425;
     cursor: pointer;
 }
-.dot.active{ background: #2A2425; border-color: #2A2425; box-shadow: 0 8px 16px rgba(42,36,37,0.24); }
+
+.dot.active {
+    background: #2A2425;
+    border-color: #2A2425;
+    box-shadow: 0 8px 16px rgba(42, 36, 37, 0.24);
+}
+
 @keyframes carouselSlideIn {
     from {
         opacity: 0;
         transform: translateY(24px) scale(0.98);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -542,31 +584,41 @@ p {
         max-width: calc(50% - 12px);
     }
 }
+
 @media (max-width: 720px) {
     .carousel {
         padding: 24px 16px 24px;
     }
+
     .slide {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .carousel-button {
         width: 48px;
         height: 48px;
         font-size: 22px;
     }
+
     .carousel-button.prev {
         left: 8px;
     }
+
     .carousel-button.next {
         right: 8px;
     }
+
     .carousel-dots {
         gap: 10px;
     }
 }
-@media (max-width: 600px){
-    .carousel-button{ font-size: 20px; padding: 8px 10px; }
+
+@media (max-width: 600px) {
+    .carousel-button {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
 }
 
 
@@ -807,7 +859,7 @@ main {
 
 
 
-.icons-width{
-    width:100px;
-    color:#CF5354;
+.icons-width {
+    width: 100px;
+    color: #CF5354;
 }
