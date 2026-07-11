@@ -1,49 +1,49 @@
 {
-    "realisation": [
-        {
-            "img": "/asset/Satellite.png",
-            "nom": "Satellite",
-            "tag-1": "UI/UX Design",
-            "tag-2": "Prototype",
-            "tag-3": "Travail de Groupe",
-            "description": "Projet pour le hackathon, évaluation finale de la formation La Toile. Nous devions, en groupe, créer le prototype d'une application avec un thèmatique imposé, un persona à choisir ainsi qu'une problématique et une solution à trouver et tous ça en seulement 2 jours et demi.",
-            "btn-esp": "En savoir plus"
-        },
-        {
-            "img": "/asset/CoQuartier.png",
-            "nom": "CoQuartier",
-            "tag-1": "UI/UX Design",
-            "tag-2": "Prototype",
-            "tag-3": "Travail de Groupe",
-            "description": "Plus long projet de cette formation, nous devions, en groupe, créer une application avec sa landing page et sa documentation sur une thèmatique imposé.",
-            "btn-esp": "En savoir plus"
-        },
-        {
-            "img": "/asset/Tudo_de_Bom.png.png",
-            "nom": "Tudo de Bom",
-            "tag-1": "Développement Web",
-            "tag-2": "Front-end",
-            "tag-3": "HTML/CSS/JS",
-            "description": "Réalisation d'un site web pour un restaurant brésilien avec un asset donné, mais un design libre.",
-            "btn-esp": "En savoir plus"
-        },
-        {
-            "img": "/asset/Clara_Lenoir_Photographie.png",
-            "nom": "Clara Lenoir - Photographe",
-            "tag-1": "Développement Web",
-            "tag-2": "Front-end",
-            "tag-3": "HTML/CSS",
-            "description": "Conception d'un portfolio pour une photographe, avec un asset et une charte graphique à respecter.",
-            "btn-esp": "En savoir plus"
-        },
-        {
-          "img": "/asset/Interno.png",
-            "nom": "Interno",
-            "tag-1": "Développement Web",
-            "tag-2": "Front-end",
-            "tag-3": "HTML/CSS",
-            "description": "Évaluation HTML/CSS, avec une maquette Figma d'un site fictif à coder.",
-            "btn-esp": "En savoir plus"   
-        }
-    ]
+  "realisation": [
+    {
+      "nom": "Satellite",
+      "durée": "2 jours et demi",
+      "type": "UI/UX Design",
+      "tag-1": "#Veille UI/UX",
+      "tag-2": "#Prototype",
+      "tag-3": "#Travaille de groupe",
+      "img": "asset/Satellite.png"
+    },
+    {
+      "nom": "CoQuartier",
+      "durée": "3 semaines",
+      "type": "UI/UX Design",
+      "tag-1": "#Veille UI/UX",
+      "tag-2": "#Prototype",
+      "tag-3": "#Travaille de groupe",
+      "img": "asset/CoQuartier.png"
+    },
+    {
+      "nom": "Tudo de Bom",
+      "durée": "1 semaine",
+      "type": "Developpement Web",
+      "tag-1": "#Front-end",
+      "tag-2": "#HTML/CSS/JS",
+      "tag-3": "#API",
+      "img": "asset/Tudo_de_Bom.png"
+    },
+    {
+      "nom": "Clara Lenoir Photorgraphe",
+      "durée": "1 semaine",
+      "type": "Developpement Web",
+      "tag-1": "#Front-end",
+      "tag-2": "#HTML/CSS",
+      "tag-3": "Charte Graphique",
+      "img": "asset/Clara_Lenoir_Photographe.png"
+    },
+    {
+      "nom": "Interno",
+      "durée": "1 semaine",
+      "type": "Developpement Web",
+      "tag-1": "#Front-end",
+      "tag-2": "#HTML/CSS",
+      "tag-3": "Initiation à CSS",
+      "img": "asset/Interno.png"
+    }
+  ]
 }
