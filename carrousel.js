@@ -67,6 +67,22 @@ function createCardElement(slide) {
     return container;
 }
 
+function initScrollReveal() {
+    const carousel = document.querySelector('.carousel');
+    if (!carousel) return;
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                carousel.classList.add('is-visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(carousel);
+}
+
 function populateSlider(slides) {
     const track = document.getElementById('slider-track');
     const dotsContainer = document.getElementById('carousel-dots');
@@ -138,6 +154,7 @@ function populateSlider(slides) {
     window.addEventListener('resize', update);
     createDots();
     update();
+    initScrollReveal();
 
     let autoplay = setInterval(() => {
         current = current < maxIndex ? current + 1 : 0;

@@ -183,6 +183,18 @@ p {
     background-repeat: no-repeat;
 }
 
+.background-bleu {
+    background-color: #5471A1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.carte-beige{
+    background-color:#FFF4DF;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* ------------------------------
            Bouton
@@ -327,6 +339,27 @@ p {
     background: none;
     border-radius: 0;
     box-shadow: none;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.carousel.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.carousel.is-visible .slide{
+    animation: carouselSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.carousel.is-visible .slide:nth-child(2n) {
+    animation-delay: 0.1s;
+}
+.carousel.is-visible .slide:nth-child(3n) {
+    animation-delay: 0.2s;
+}
+.carousel.is-visible .carousel-button,
+.carousel.is-visible .carousel-dots {
+    opacity: 1;
+    transform: translateY(0);
 }
 .carousel-track-wrap{
     overflow: hidden;
@@ -442,7 +475,9 @@ p {
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
-.carte-bouton:hover {
+.carte-bouton:hover,
+.carte-item:hover .carte-bouton,
+.carte-item:focus-within .carte-bouton {
     color: #FFF;
     background: #2A2425;
 }
@@ -462,8 +497,10 @@ p {
     font-size: 24px;
     border-radius: 9999px;
     box-shadow: 0 12px 24px rgba(35,59,111,0.08);
-    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, opacity 0.5s ease;
     z-index: 5;
+    opacity: 0;
+    transform: translateY(-50%) translateY(12px);
 }
 .carousel-button:hover{ transform: translateY(-50%) scale(1.05); background: #FFF4DF; }
 .carousel-button.prev:hover{ background: #CF5354; color: #FFF4DF; border-color: #CF5354; }
@@ -475,6 +512,9 @@ p {
     justify-content: center;
     gap: 12px;
     margin-top: 32px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .dot{
     width: 12px;
@@ -485,6 +525,17 @@ p {
     cursor: pointer;
 }
 .dot.active{ background: #2A2425; border-color: #2A2425; box-shadow: 0 8px 16px rgba(42,36,37,0.24); }
+@keyframes carouselSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 @media (max-width: 960px) {
     .slide {
         flex: 0 0 calc(50% - 12px);
@@ -752,4 +803,11 @@ main {
     background-color: transparent;
     backdrop-filter: blur(10px);
     transition: 0.2s ease;
+}
+
+
+
+.icons-width{
+    width:100px;
+    color:#CF5354;
 }
