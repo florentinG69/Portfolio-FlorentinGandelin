@@ -38,11 +38,11 @@
 
 
 /* Zalando */
-.zalando-sans-expanded{
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.zalando-sans-expanded {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -97,8 +97,8 @@ h1 {
 
 
 h2 {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 900;
     font-style: normal;
     font-size: 32px;
     color: #2A2425;
@@ -110,17 +110,18 @@ h3 {
     font-family: "Gloock", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
     color: #2A2425;
 
 }
 
 p {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
-    font-size: 18px;
     color: #2A2425;
+    font-size: 20px;
 
 }
 
@@ -133,6 +134,13 @@ p {
 
 }
 
+.h2-hero{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #2A2425;
+}
 
 /* ------------------------------
             CONTAINER
@@ -174,24 +182,6 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-/* ------------------------------
-           Carte
----------------------------------*/
-
-.carte-projet {
-    background-color: #ffffff;
-    padding: 40px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.185);
-    border-radius: 50px;
-    width: 40%;
-}
-
-
-
-
-
-
 
 
 /* ------------------------------
@@ -328,6 +318,207 @@ p {
     margin-bottom: 128px;
 }
 
+/* Carousel styles */
+.carousel{
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 30px 24px 28px;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.carousel-track-wrap{
+    overflow: hidden;
+    padding-bottom: 16px;
+}
+.carousel-track{
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+}
+.slide{
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    scroll-snap-align: start;
+}
+.slide.active .carte-item{
+    transform: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+}
+.slide img,
+.carte-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px 24px 0 0;
+    display: block;
+}
+.carousel-track li.slide {
+    min-height: 100%;
+}
+.carte-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
+}
+.carte-item:hover {
+    border-color: #2A2425;
+}
+.carte-image-link {
+    display: block;
+    width: 100%;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+.type {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(66, 88, 161, 0.12);
+    color: #5471a1;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    width: fit-content;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+.carte-titre {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #1c1f34;
+}
+.duree {
+    margin: 0;
+    color: #CF5354;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.tag {
+    margin: 0;
+    color: #4a5a8e;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.carte-bouton {
+    color: #2A2425;
+    border-color: #2A2425;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 10px 0 0;
+    border: 2px solid #2A2425;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+.carte-bouton:hover {
+    color: #FFF;
+    background: #2A2425;
+}
+.carousel-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFF4DF;
+    color: #3a4d82;
+    border: 2px solid #2A2425;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 9999px;
+    box-shadow: 0 12px 24px rgba(35,59,111,0.08);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    z-index: 5;
+}
+.carousel-button:hover{ transform: translateY(-50%) scale(1.05); background: #FFF4DF; }
+.carousel-button.prev:hover{ background: #CF5354; color: #FFF4DF; border-color: #CF5354; }
+.carousel-button.next:hover{ background: #5471A1; color: #FFF4DF; border-color: #5471A1; }
+.carousel-button.prev{ left: -48px; }
+.carousel-button.next{ right: -48px; }
+.carousel-dots{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #2A2425;
+    cursor: pointer;
+}
+.dot.active{ background: #2A2425; border-color: #2A2425; box-shadow: 0 8px 16px rgba(42,36,37,0.24); }
+@media (max-width: 960px) {
+    .slide {
+        flex: 0 0 calc(50% - 12px);
+        max-width: calc(50% - 12px);
+    }
+}
+@media (max-width: 720px) {
+    .carousel {
+        padding: 24px 16px 24px;
+    }
+    .slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .carousel-button {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+    .carousel-button.prev {
+        left: 8px;
+    }
+    .carousel-button.next {
+        right: 8px;
+    }
+    .carousel-dots {
+        gap: 10px;
+    }
+}
+@media (max-width: 600px){
+    .carousel-button{ font-size: 20px; padding: 8px 10px; }
+}
+
+
 /* padding */
 
 .pr-32 {
@@ -460,17 +651,30 @@ p {
 /* ------------------------------
             Position
  ---------------------------------*/
-
 .header-pos {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+main {
+    padding-top: 88px;
+    /* ajuste selon la hauteur réelle du header */
 }
 
 
 
-
-
-
+.titre-position {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 /* ------------------------------
@@ -540,95 +744,19 @@ p {
 
 
 
-
-
-
 /* ------------------------------
            header apre scroll
  ---------------------------------*/
-.header-scroll{
-    color: #B2C9DF;
+.header-scroll {
+    color: #81878d81;
     background-color: transparent;
     backdrop-filter: blur(10px);
     transition: 0.2s ease;
 }
 
 
-/* ------------------------------
-            carte realisation
- ---------------------------------*/
-.carte-liste .carte-item .carte-link {
-    width: 500px;
-    display: block;
-    background: #fff;
-    padding: 18px;
-    border-radius: 25px;
-    text-decoration: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.185);
-    border: 2px solid transparent;
-    transition: 0.2s ease;
-
-}
-
-.carte-liste .carte-item .carte-link:hover {
-    border-color: #5471A1;
-}
 
 
 
-.carte-liste .carte-link .carte-image {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.carte-liste .carte-item {
-    list-style: none;
-}
-
-.carte-liste .carte-link .tag {
-    color: #5471A1;
-    padding: 5px 10px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 10px 0 6px;
-    background: #B2C9DF;
-    width: fit-content;
-    border-radius: 5px;
-}
-
-.carte-liste .carte-link .carte-titre {
-    color: #2A2425;
-}
-
-.carte-liste .carte-link .carte-bouton {
-    height: 35px;
-    width: 35px;
-    color: #5471A1;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    border: 2px solid #5471A1;
-    background: none;
-    cursor: pointer;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-}
-
-.carte-liste .carte-link:hover .carte-bouton {
-    color: #fff;
-    background: #5471A1;
-
-}
-
-/* ------------------------------
-           Position
----------------------------------*/
 
 
-.titre-position{
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-}

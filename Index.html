@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="carrousel.js" defer></script>
     <script src="portfolio.js" defer></script>
 </head>
 
@@ -39,7 +40,7 @@
                 <div>
                     <h1>Bienvenue sur mon portfolio, <br> je suis Florentin, ui/ux designer junior
                     </h1>
-                    <h2 class=" h2-hiro pb-32">Je donne vie à vos projets numériques en accord avec vos envies
+                    <h2 class="h2-hero pb-32">Je donne vie à vos projets numériques en accord avec vos envies
                         et vos besoins !</h2>
                 </div>
 
@@ -54,7 +55,18 @@
             <div class="container-1200">
 
                 <h2 class="mb-32">Mes réalisations</h2>
-                <p class="mb-64">Toutes ces réalisations ont été faites pendant ma formation en développement web.</p>
+                <p class="mb-64">Toutes ces réalisations ont été faites pendant ma formation conception et développement web.</p>
+
+                <div>
+                    <section class="carousel">
+                        <div class="carousel-track-wrap">
+                            <ul id="slider-track" class="carousel-track"></ul>
+                        </div>
+                        <button id="slider-prev" class="carousel-button prev" aria-label="Précédent">‹</button>
+                        <button id="slider-next" class="carousel-button next" aria-label="Suivant">›</button>
+                        <div id="carousel-dots" class="carousel-dots"></div>
+                    </section>
+                </div>
 
             </div>
 
