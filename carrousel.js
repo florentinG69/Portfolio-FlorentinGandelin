@@ -32,6 +32,11 @@ function createCardElement(slide) {
     const typeLabel = document.createElement('p');
     typeLabel.className = 'type';
     typeLabel.textContent = slide.type || '';
+    if (slide.type === 'UI/UX Design') {
+        typeLabel.style.backgroundColor = '#FFA565';
+    } else {
+        typeLabel.style.backgroundColor = '#FFED65';
+    }
     info.appendChild(typeLabel);
 
     const titleRow = document.createElement('div');

@@ -40,7 +40,7 @@
 .instrument-serif-regular {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
 }
 
 /* ------------------------------
@@ -88,7 +88,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 64px;
-    color: #FFFFFF;
+    color: #151515;
 }
 
 
@@ -101,13 +101,23 @@ h2 {
 
 }
 
-
 h3 {
     font-family: "Gloock", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     font-size: 24px;
-    color: #2A2425;
+    color: #151515;
+
+}
+
+
+
+.h2-qualite{
+        font-family: "Gloock", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    color: #ffffff;
 
 }
 
@@ -138,13 +148,9 @@ p {
     color: #FFFFFF;
 }
 
-.florentin {
-    font-family: "Gloock", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 64px;
-    color: #FFFFFF;
-
+i{
+    color:#ffffff;
+    font-size: 200px
 }
 
 /* ------------------------------
@@ -177,19 +183,18 @@ p {
     position: relative;
     z-index: 0;
     background-image: url(asset/background_hero.png);
-    background-position: top;
+    background-position: top center;
     background-size: cover;
-    width: 100%;
-    height: 140vh;
+    height:100vh;
     background-repeat: no-repeat;
 
 }
 
 
-.carte-beige {
-    background-color: #FFF4DF;
+.background-noir{
+    background-color:#151515;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat
 }
 
 /* ------------------------------
@@ -197,7 +202,7 @@ p {
 ---------------------------------*/
 
 .btn-nav {
-    color: #0027A9;
+    color: #151515;
     font-family: "Instrument Serif", serif;
     font-weight: 500;
     font-style: normal;
@@ -207,12 +212,12 @@ p {
 }
 
 .btn-contact {
-    color: #0027A9;
+    color: #FFFFFF;
     border: solid;
-    border-color: #0027A9;
+    border-color: #151515;
     border-width: 1px;
     border-radius: 20px;
-    background-color: #C4E2FF;
+    background-color: #151515;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -223,13 +228,14 @@ p {
 
 }
 
+
 .btn-real {
     color: #000000;
     border: solid;
     border-width: 1px;
     border-radius: 20px;
     border-color: #000000;
-    background-color: #ffffff;
+    background-color: transparent;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -247,10 +253,12 @@ p {
  ---------------------------------*/
 
 .btn-contact:hover,
-.btn-contact:focus {
-    background-color: #0027A9;
-    border-color: #0027A9;
-    color: #FFFFFF;
+.btn-contact:focus,
+.header-pos .btn-contact:hover,
+.header-pos .btn-contact:focus {
+    background-color: #FFFFFF;
+    border-color: #151515;
+    color: #151515;
 }
 
 .btn-real:hover,
@@ -258,11 +266,6 @@ p {
     background-color: #000000;
     border-color: #000000;
     color: #FFF4DF;
-}
-
-.btn-nav:hover,
-.btn-nav:focus {
-    color: #2A2425;
 }
 
 .btn-esp:hover,
@@ -304,6 +307,7 @@ p {
     margin-bottom: 64px;
 }
 
+
 .mt-128 {
     margin-top: 128px;
 }
@@ -311,6 +315,80 @@ p {
 .mb-128 {
     margin-bottom: 128px;
 }
+
+
+/* padding */
+
+.pr-32 {
+    padding-right: 32px;
+}
+
+.pl-32 {
+    padding-left: 32px;
+}
+
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pb-32 {
+    padding-bottom: 16px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-64 {
+    padding-bottom: 64px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+
+.pb-128 {
+    padding-bottom: 128px;
+}
+
+.pt-256 {
+    padding-top: 256px;
+}
+
+.pb-256 {
+    padding-bottom: 256px;
+}
+
+
+
+/* ------------------------------
+         CARROUSEL
+ ---------------------------------*/
+
+
+
+
 
 /* Carousel styles */
 .carousel {
@@ -405,7 +483,7 @@ p {
 }
 
 .carte-item:hover {
-    border-color: #0027A9;
+    border-color: #151515;
 }
 
 .carte-image-link {
@@ -426,7 +504,7 @@ p {
     padding: 8px 14px;
     border-radius: 999px;
     background: rgba(0, 39, 169, 0.12);
-    color: #0027A9;
+    color: #151515;
     font-family: "DM Sans", sans-serif;
     font-size: 0.88rem;
     font-weight: 600;
@@ -458,7 +536,7 @@ p {
 
 .tag {
     margin: 0;
-    color: #0027A9;
+    color: #151515;
     font-family: "DM Sans", sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
@@ -466,8 +544,8 @@ p {
 }
 
 .carte-bouton {
-    color: #0027A9;
-    border-color: #0027A9;
+    color: #151515;
+    border-color: #151515;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -475,7 +553,7 @@ p {
     height: 35px;
     border-radius: 50%;
     margin: 10px 0 0;
-    border: 2px solid #0027A9;
+    border: 2px solid #151515;
     background: none;
     cursor: pointer;
     transform: rotate(-45deg);
@@ -486,8 +564,8 @@ p {
 .carte-item:hover .carte-bouton,
 .carte-item:focus-within .carte-bouton {
     color: #FFF;
-    background: #0027A9;
-    border-color: #0027A9;
+    background: #151515;
+    border-color: #151515;
 }
 
 .carousel-button {
@@ -495,8 +573,8 @@ p {
     top: 50%;
     transform: translateY(-50%);
     background: #ffffff;
-    color: #0027A9;
-    border: 2px solid #0027A9;
+    color: #151515;
+    border: 2px solid #151515;
     width: 52px;
     height: 52px;
     display: flex;
@@ -518,9 +596,9 @@ p {
 
 .carousel-button.prev:hover,
 .carousel-button.next:hover {
-    background: #0027A9;
+    background: #151515;
     color: #FFF4DF;
-    border-color: #0027A9;
+    border-color: #151515;
 }
 
 .carousel-button.prev {
@@ -546,13 +624,13 @@ p {
     height: 12px;
     border-radius: 50%;
     background: transparent;
-    border: 2px solid #0027A9;
+    border: 2px solid #151515;
     cursor: pointer;
 }
 
 .dot.active {
-    background: #0027A9;
-    border-color: #0027A9;
+    background: #151515;
+    border-color: #151515;
     box-shadow: 0 8px 16px rgba(42, 36, 37, 0.24);
 }
 
@@ -611,69 +689,6 @@ p {
     }
 }
 
-
-/* padding */
-
-.pr-32 {
-    padding-right: 32px;
-}
-
-.pl-32 {
-    padding-left: 32px;
-}
-
-
-.pt-8 {
-    padding-top: 8px;
-}
-
-.pb-8 {
-    padding-bottom: 8px;
-}
-
-.pb-16 {
-    padding-bottom: 16px;
-}
-
-.pt-16 {
-    padding-top: 16px;
-}
-
-.pb-32 {
-    padding-bottom: 16px;
-}
-
-.pt-32 {
-    padding-top: 32px;
-}
-
-.pt-64 {
-    padding-top: 64px;
-}
-
-.pb-64 {
-    padding-bottom: 64px;
-}
-
-.pb-32 {
-    padding-bottom: 32px;
-}
-
-.pt-128 {
-    padding-top: 128px;
-}
-
-.pb-128 {
-    padding-bottom: 128px;
-}
-
-.pt-256 {
-    padding-top: 256px;
-}
-
-.pb-256 {
-    padding-bottom: 256px;
-}
 
 
 
@@ -758,13 +773,14 @@ p {
 /* make header text and nav visible over the hero */
 .header-pos .btn-nav,
 .header-pos .p-header {
-    color: #FFFFFF;
+    color: #151515;
 }
 
 .header-pos .btn-contact {
     /* keep contact button visible on dark header */
-    color: #0027A9;
-    background-color: #C4E2FF;
+    color: #FFFFFF;
+    border-color: #151515;
+    background-color: #151515;
 }
 
 /* header réduit quand l'utilisateur scroll */
@@ -885,3 +901,10 @@ main {
     width: 100px;
     color: #CF5354;
 }
+
+/* ------------------------------
+           
+ ---------------------------------*/
+
+
+
