@@ -28,6 +28,13 @@
     font-style: normal;
 }
 
+.dm-sans-gras {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Gloock */
 
 .gloock-regular {
@@ -37,7 +44,7 @@
 }
 
 
-.instrument-serif-regular {
+.instrument-italic {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: italic;
@@ -65,8 +72,8 @@
     color: #2A2425;
 }
 
-.beige {
-    color: #FFF4DF;
+.blanc {
+    color: #ffffff;
 }
 
 .bleu {
@@ -104,12 +111,19 @@ h2 {
 h3 {
     font-family: "Gloock", serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     font-size: 24px;
     color: #151515;
 
 }
 
+.h3-hero{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    color:#151515
+}
 
 
 .h2-qualite{
@@ -122,7 +136,7 @@ h3 {
 }
 
 p {
-    font-family: "Instrument Serif", serif;
+    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -151,6 +165,24 @@ p {
 i{
     color:#ffffff;
     font-size: 200px
+}
+
+.p-qualite{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.p-carte-parcours{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    color: #151515;
+    font-size: 20px;
 }
 
 /* ------------------------------
@@ -195,6 +227,16 @@ i{
     background-color:#151515;
     background-size: cover;
     background-repeat:no-repeat
+}
+
+.carte-parcours{
+    background-color:#FFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* ------------------------------
@@ -282,6 +324,15 @@ i{
  ---------------------------------*/
 
 /* Margin */
+
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mb-8{
+    margin-bottom:8px;
+}
 
 .mt-16 {
     margin-top: 16px;
