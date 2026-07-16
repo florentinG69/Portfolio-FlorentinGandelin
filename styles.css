@@ -235,7 +235,8 @@ i{
     background-repeat: no-repeat;
     padding: 20px;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
+    margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -959,3 +960,6 @@ main {
 
 
 
+.border-bottom{
+    border-bottom: 1px solid #151515;
+}
