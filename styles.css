@@ -949,10 +949,6 @@ main {
 
 
 
-.icons-width {
-    width: 100px;
-    color: #CF5354;
-}
 
 /* ------------------------------
            
@@ -962,4 +958,18 @@ main {
 
 .border-bottom{
     border-bottom: 1px solid #151515;
+}
+
+
+.icon-footer{
+    font-size: 26px
+}
+
+
+.logo-footer{
+    font-size: 64px;
+}
+
+.p-footer{
+    font-size: 24px;
 }
